@@ -6,10 +6,12 @@ const app = express();
 
 app.get("/", (req, res) =>
   res.json({
-    message: "Hello world",
+    message: "Hello world!",
   })
 );
 
 app.listen(PORT, () =>
   console.log(`Server listen on http://localhost:${PORT}`)
 );
+
+export default app;
