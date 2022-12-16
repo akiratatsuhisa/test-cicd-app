@@ -9,7 +9,7 @@
     "build": "tsc --project tsconfig.json",
     "docker:build": "docker build -t test-app .",
     "docker:run": "docker run -it -d -p 3000:3000 test-app",
-    "test": "mocha -r ts-node/register tests/**/*.spec.ts"
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts --exit"
   },
   "repository": {
     "type": "git",
