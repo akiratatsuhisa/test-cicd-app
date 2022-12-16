@@ -70,6 +70,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags:
-            - ${{ secrets.DOCKER_HUB_USERNAME }}/test-cicd-app:latest
-            - ${{ secrets.DOCKER_HUB_USERNAME }}/test-cicd-app:
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/test-cicd-app:latest
