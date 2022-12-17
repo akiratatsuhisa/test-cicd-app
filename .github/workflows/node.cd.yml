@@ -2,10 +2,10 @@ name: Deploy
 
 on:
   workflow_run:
-    branches: [develop]
     workflows: [Build And Tests]
     types:
       - completed
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
