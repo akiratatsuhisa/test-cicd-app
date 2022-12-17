@@ -1,9 +1,11 @@
-name: Node.js CD
+name: Deploy
 
 on:
-  push:
-    branches: ["develop"]
-
+  workflow_run:
+    branches: [develop]
+    workflows: [Run Build And Tests]
+    types:
+      - completed
 jobs:
   deploy:
     runs-on: ubuntu-latest
